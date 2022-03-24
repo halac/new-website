@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+img{
+    height: 300px;
+    width: 500px;
+}
+h1{
+    color: blue;
+}
+footer{
+    background-color: red;
+    color: white;
+}
