@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.warpper{
+    display: inline-flex;
+}
+
+.warpper .static-text{
+    color: #111827;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.warpper .dynamic-text{
+
+    height: 90px;
+    line-height: 90px;
+    overflow: hidden;
+}
+.warpper .dynamic-text2{
+
+    height: 90px;
+    line-height: 90px;
+    overflow: hidden;
+}
+
+.dynamic-text li{
+    list-style: none;
+    font-size: 20px;
+    font-weight: 500;
+    position: relative;
+    top: 0;
+    animation: slide 6s steps(4) infinite;
+}
+.dynamic-text2 li{
+    list-style: none;
+    font-size: 16px;
+    font-weight: 500;
+    position: relative;
+    top: 0;
+    animation: slide 6s steps(4) infinite;
+}
+
+
+@keyframes slide{
+    100%{
+       top: -360px;
+    }
+}
+
+
+.dynamic-text li span{
+    position: relative;
+}
+
+.dynamic-text2 li span{
+    position: relative;
+}
+
+
+.dynamic-text li span::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 2px;
+    height: 100%;
+    width: 100%;
+    background-color: #F3F4F6;
+    border-left: 4px solid #000;
+    animation: typing 1.5s steps(10) infinite;
+}
+
+.dynamic-text2 li span::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 2px;
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    border-left: 4px solid #000;
+    animation: typing 1.5s steps(10) infinite;
+}
+
+
+@keyframes typing{
+    100%{
+        left: 100%;
+        margin: 0 -35px 0 35px;
+    }
+}
+
+
+
+
+
